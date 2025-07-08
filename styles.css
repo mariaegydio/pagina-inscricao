@@ -1,0 +1,162 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #1a1a2e;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.nav {
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  color: #a8a8a8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 60px 20px;
+}
+
+.content {
+  flex: 1;
+  min-width: 350px;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.content h1 span {
+  color: #ff7b54;
+}
+
+.content p {
+  color: #a8a8a8;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.form-group input {
+  padding: 18px;
+  border: none;
+  border-radius: 30px;
+  background: #2e2e3a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-group input::placeholder {
+  color: #bbb;
+}
+
+.form-group button {
+  background: #ff7b54;
+  color: #fff;
+  padding: 18px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-group button:hover {
+  background: #e56b44;
+}
+
+.image-container {
+  flex: 1;
+  min-width: 350px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.ellipse {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, #ff7b54 0%, transparent 70%);
+  border-radius: 50%;
+  top: -20px;
+  left: -80px;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
